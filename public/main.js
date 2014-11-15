@@ -77,9 +77,9 @@ $(function() {
 
   socket.on('user left', function(data) {
     var message = '';
-    html += "<ul class=\"chat-message\"><li>" + data.username + ' disconnetcted </li></ul>';
+    message += "<ul class=\"chat-message\"><li>" + data.username + ' disconnetcted </li></ul>';
 
-    chatElem.append(html);
+    chatElem.append(message);
     currentUsers(data);
   });
 
