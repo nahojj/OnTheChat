@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(8, 111, 148);
+	font-family: font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	padding: 15px 0 0 0;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+ul,li,a,span {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 ,h6, p {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.table-container {
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 1000;
+}
+
+.outer {
+	width: 100%;
+	height: 100%;
+	display: table;
+	vertical-align: middle;
+	table-layout: fixed;
+}
+
+.inner {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#userData {
+	width: 40%;
+	min-height: 100px;
+	margin: 0 auto;
+}
+
+#userData input {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	font-size: 24px;
+	border: 1px solid rgb(0, 81, 123);
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#userData input:focus {
+	outline: none;
+}
+
+#chatter {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 40px;
+	display: none;
+	position: relative;
+	z-index: 1000;
+}
+
+.message {
+	padding: 10px;
+	background: rgb(0, 98, 140);
+}
+
+.message:nth-child(odd) {
+	background: rgb(0, 71, 102);
+}
+
+.chat-message:before {
+	content: '-';
+	float: left;
+	margin-right: 6px;
+}
+
+.chat-message {
+	width: 30%;
+	margin: 10px 0 10px 5px;
+	padding: 5px 29px;
+	list-style: none;
+	text-align: left;
+	color: rgb(0, 98, 140);
+	background: white;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.username {
+	font-weight: 700;
+	color: white;
+	margin-right: 15px;
+}
+
+.user-message {
+	font-weight: 300;
+	color: white;
+}
+
+#sidebar {
+	width: 20%;
+	height: 100%;
+	float: right;
+	background: rgb(0, 34, 48);
+}
+
+#sidebar h2 {
+	color: white;
+	text-align: center;
+}
+
+#send {
+	width: 100%;
+	padding: 20px 10px;
+	margin-right: .5%;
+	border: 0;
+}
+
+#send:focus {
+	outline: none;
+}
+
+
+form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+form input {
+form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }

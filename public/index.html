@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>OnTheChat</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,400italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div class="table-container">
+      <div class="outer">
+        <div class="inner">
+          <header>
+            <h1>OnTheChat</h1>
+          </header>
+
+          <div id="userData">
+            <input type="text" id="username" autocomplete="off" placeholder="Enter a Username..." />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="chatter">
+      <form action="">
+        <input id="send" autocomplete="off" placeholder="Write..." />
+        <!-- <button>Send</button> -->
+      </form>
+
+      <div id="sidebar">
+        <h2>Users Online</h2>
+      </div>
+
+    </div>
+
+    <ul id="messages"></ul>
+
+
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="main.js"></script>
+<!-- <script>
+  var socket = io();
+  \$('form').submit(function(){
+    socket.emit('chat message', \$('#m').val());
+    \$('#m').val('');
+    return false;
+  });
+  socket.on('chat message', function(msg){
+    \$('#messages').append(\$('<li>').text(msg));
+  });
+</script> -->
+  </body>
+</html>
