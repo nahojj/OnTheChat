@@ -1,7 +1,7 @@
 $(function() {
   // TODO: Dekilera varbs för elementen på sidan.
   var messages  = [];
-  var socket    = io.connect();
+  var socket    = io.connect('http://onthechat.johanjohansson.me:3000');
   var chatElem = $('#chatter');
   var messageInput = $('#send');
   var userInput = $('#username');
