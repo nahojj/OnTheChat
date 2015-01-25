@@ -6,4 +6,4 @@
 
 ## Demo	
 
-Try it out here: http://ontthechat.johanjohansson.me
+Try it out here: http://onthechat.johanjohansson.me
